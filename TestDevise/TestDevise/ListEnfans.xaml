@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDevise.ListEnfans">
+  <ContentPage.Content>
+    <ListView  x:Name="MainListView" BackgroundColor="#2287ca">
+      <ListView.ItemTemplate BackgroundColor="#2287ca">
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout BackgroundColor="#eee"
+            Orientation="Vertical">
+              <StackLayout Orientation="Horizontal">
+                <Image Source="{Binding Image}" HeightRequest="50" WidthRequest="50" />
+                <Label Text="{Binding Name}"
+                TextColor="#2287ca" />
+                <Label Text="{Binding Etat}"
+                HorizontalOptions="EndAndExpand"
+                TextColor="#f35e20" />
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    
+
+      
+
+  </ContentPage.Content>
+</ContentPage>

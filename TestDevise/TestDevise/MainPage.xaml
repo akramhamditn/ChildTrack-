@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDevise.MainPage">
+<ContentPage.Content>
+   <StackLayout
+      Padding="0,50,0,0"
+      BackgroundColor="#2287ca"
+      VerticalOptions="FillAndExpand"
+      Spacing="20">
+     <Image Source="ic_launcher.png"  HeightRequest="200"
+      WidthRequest="200" />
+    
+<StackLayout
+   HorizontalOptions="FillAndExpand"
+   Spacing="40">
+  <Entry
+    x:Name="userName"
+      Placeholder="Username" 
+      PlaceholderColor="#2287ca" 
+      TextColor="#2287ca"
+      BackgroundColor="White"
+      HeightRequest="45"
+      WidthRequest="200"/>
+   <Entry
+     x:Name="passeWD"
+      IsPassword="True"
+      Placeholder="Password"
+      PlaceholderColor="#2287ca" 
+      TextColor="#2287ca"
+      BackgroundColor="White"
+      HeightRequest="45"
+      WidthRequest="200"/>
+</StackLayout>
+   <StackLayout
+   Orientation="Horizontal"
+   HorizontalOptions="CenterAndExpand"
+   Spacing="40">
+   <Button
+      x:Name="buttonCancel"
+      Text="Cancel"
+      TextColor="White"
+      BackgroundColor="#2287ca"
+      BorderRadius="15"
+      BorderColor="White"
+      BorderWidth="2"
+      HeightRequest="40"
+      WidthRequest="150"/>
+   <Button
+      x:Name="buttonLogin"
+      Text="Log in"
+      TextColor="#2287ca"
+      BackgroundColor="White"
+      BorderRadius="15"
+      HeightRequest="40"
+      WidthRequest="150"
+      Clicked="LoginClic"/>
+</StackLayout>
+<Button
+   x:Name="buttonForgot"
+   Text="Register !!"
+   TextColor="White"
+   BackgroundColor="Transparent"
+   Clicked="RegisterClic"
+   />
+   </StackLayout>
+</ContentPage.Content>
+
+</ContentPage>
